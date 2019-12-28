@@ -14,7 +14,7 @@ import com.qa.hubspot.pages.HomePage;
 import com.qa.hubspot.pages.LoginPage;
 
 
-public class HomePageTest {
+public class  HomePageTest {
 
 	WebDriver driver;
 	Properties prop;
@@ -30,6 +30,10 @@ public class HomePageTest {
 		loginPage = new LoginPage(driver);
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.takeToCorrectReportURL();
+	}
+	@Test
+	public void display() {
+		
 	}
 
 	@Test(priority = 1)
