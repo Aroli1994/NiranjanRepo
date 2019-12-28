@@ -31,11 +31,7 @@ public class  HomePageTest {
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.takeToCorrectReportURL();
 	}
-	@Test
-	public void display() {
-		
-	}
-
+	
 	@Test(priority = 1)
 	public void verifyHomePageTitleTest() {
 		String title = homePage.getHomePageTitle();
